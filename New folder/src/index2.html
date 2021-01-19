@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Assignment</title>
+    <link rel="stylesheet" href="assersts/normalize.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assersts/fonts/css/all.min.css">
+    <style>
+        *{
+            font-family: 'Ubuntu', sans-serif;
+        }
+        header{
+            height: 9vh;
+            background: white;
+            box-shadow: 1px 2px 7px 4px rgba(196, 96, 96, 0.84);
+            position: relative;
+        }
+        header>img{
+            width: 194px;
+            padding:6px;
+            padding-left:13px;
+        }
+        header>ul{
+            position: absolute;
+            right: 16px;
+            top: 0;
+            list-style: none;
+
+            font-size: 15px;
+        }
+        header>ul>li{
+            display: inline-block;
+            padding: 6px;
+        }
+        header>ul>li>i{
+            margin-right: 10px;
+        }
+        body>footer{
+            height: 9vh;
+            background: #4c3232;
+        }
+        body>footer>h3{
+            color: white;
+            text-align: center;
+            padding: 12px;
+            margin: 0;
+        }
+        main{
+            position: relative;
+        }
+        main>nav{
+            width: 300px;
+            background: #5f3daf;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+        }
+        main>section{
+        margin-left: 300px;
+         padding: 10px;
+        }
+        main>nav>ul{
+            color: white;
+            margin-top: 10px;
+        }
+        main>nav>ul>li{
+            list-style: none;
+            font-size: 15px;
+            padding: 5px;
+            margin-top: 5px;
+        }
+        main>nav>ul>li>i{
+            padding: 10px;
+        }
+        p::selection{
+            background: red;
+            color: white;
+        }
+        p::first-letter{
+            font-size: 20px;
+        }
+        main>section>section{
+            position: relative;
+            height: 250px;
+
+        }
+        main>section>section>div{
+            
+            height: 100%;
+            width: calc((100%/3)*1);
+            position: absolute;
+
+        }
+        main>section>section>div:nth-child(1){
+            top: 0;
+            left: 0;
+            background: url("assersts/pic/dog-647528__340.webp");
+            background-size:auto;
+
+        }
+        main>section>section>div:nth-child(2){
+            left: calc((100%/3)*1);
+            background: url("assersts/pic/dog-647528__340.webp");
+            background-size: auto;
+        }
+        main>section>section>div:nth-child(3){
+            left: calc((100%/3)*2);
+            background: url("assersts/pic/dog-647528__340.webp");
+            background-size:auto;
+        }
+    </style>
+</head>
+<body>
+<header>
+<img src="assersts/pic/ubjNdcAn_400x400.jpg" alt="logo">
+    <ul>
+        <li><i class="fas fa-home"></i>Home</li>
+        <li><i class="fas fa-align-justify"></i>Service</li>
+        <li><i class="fas fa-address-book"></i>Contacts</li>
+        <li><i class="fas fa-address-card"></i>AboutUs</li>
+    </ul>
+</header>
+<main>
+<nav>
+    <ul>
+        <li><i class="fas fa-home"></i>Home</li>
+        <li><i class="fas fa-align-justify"></i>Service</li>
+        <li><i class="fas fa-address-book"></i>Contacts</li>
+        <li><i class="fas fa-address-card"></i>AboutUs</li>
+    </ul>
+</nav>
+
+    <section>
+        <section>
+            <div></div>
+            <div></div>
+            <div></div>
+        </section>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias asperiores cum debitis delectus eos error,
+            ex excepturi fuga fugiat id ipsa maiores natus, nesciunt obcaecati quo quod vel voluptatem voluptates?</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias asperiores cum debitis delectus eos error,
+            ex excepturi fuga fugiat id ipsa maiores natus, nesciunt obcaecati quo quod vel voluptatem voluptates?</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias asperiores cum debitis delectus eos error,
+            ex excepturi fuga fugiat id ipsa maiores natus, nesciunt obcaecati quo quod vel voluptatem voluptates?</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias asperiores cum debitis delectus eos error,
+            ex excepturi fuga fugiat id ipsa maiores natus, nesciunt obcaecati quo quod vel voluptatem voluptates?</p>
+
+
+    </section>
+</main>
+<footer>
+    <h3>Developed By Me</h3>
+</footer>
+</body>
+</html>

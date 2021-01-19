@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Water Drop Animation</title>
+    <link href="CSS/css normalize.css" rel="stylesheet">
+    <style>
+        body>div{
+            width: 0.5vw;
+            height: 1vh;
+            border: 2px solid red;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            border-radius: 100%;
+            position: absolute;
+            animation: dropWater 1.5s infinite;
+        }
+
+        @keyframes dropWater {
+            from{
+                width: 0.5vw;
+                height: 1vh;
+            }
+            to{
+                width: 20vw;
+                height: 40vh;
+                opacity: 0;
+            }
+
+        }
+
+
+
+
+    </style>
+</head>
+<body>
+<div>
+
+</div>
+</body>
+</html>
