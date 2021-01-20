@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Image Slider Animation</title>
+    <link href="CSS/css normalize.css" rel="stylesheet">
+    <style>
+        section{
+            overflow: hidden;
+        }
+
+        section>div{
+            position: relative;
+            width: 500%;
+            margin: 0;
+            left: 0;
+            animation: 20s slider alternate-reverse infinite;
+        }
+
+        section>div>img{
+            width: 20%;
+            height: 100vh;
+            float: left;
+        }
+
+        @keyframes slider {
+            0%{
+                left: 0;
+            }
+            25%{
+                left: 0;
+            }
+            35%{
+                left: -100%;
+            }
+            60%{
+                left: -100%;
+            }
+
+            70%{
+                left: -200%;
+            }
+
+            100%{
+                left: -200%;
+            }
+
+
+        }
+    </style>
+</head>
+<body>
+<section>
+    <div>
+        <img src="asserts/pic_01.jpg">
+        <img src="asserts/pic_02.jpg">
+        <img src="asserts/pic_03.jpg">
+    </div>
+</section>
+</body>
+</html>

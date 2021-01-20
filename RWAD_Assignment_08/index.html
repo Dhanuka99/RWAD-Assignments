@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Car Animation</title>
+    <link href="CSS/css normalize.css" rel="stylesheet">
+    <style>
+        section{
+            position: relative;
+            height: 100vh;
+            width: 100%;
+            background: url("asserts/sky.jpg");
+            background-size: cover;
+            overflow: hidden;
+        }
+
+        section>div:nth-child(1){
+            position: absolute;
+            background: url("asserts/road.jpg");
+            height: 30vh;
+            width: 500%;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            z-index: 1;
+            background-repeat: repeat-x;
+            animation: 10s highway linear reverse infinite;
+        }
+
+        @keyframes highway {
+            0%{
+                transform: translateX(-3000px);
+            }
+
+
+            100%{
+                transform: translateX(0);
+            }
+
+        }
+
+        section>div:nth-child(2){
+            position: absolute;
+            background: url("asserts/city.png");
+            height: 40vh;
+            width: 500%;
+            bottom: 28vh;
+            left: 0;
+            right: 0;
+            z-index: 1;
+            background-repeat: repeat-x;
+            animation: 10s city linear reverse infinite;
+        }
+
+        @keyframes city {
+            0%{
+                transform: translateX(-3000px);
+            }
+        }
+
+        section>div:nth-child(3){
+            position: absolute;
+            width: 400px;
+            left: 35%;
+            bottom: 15vh;
+            z-index: 2;
+        }
+
+        section>div:nth-child(3)>img{
+            height: 30%;
+            width: 90%;
+        }
+
+        section>div:nth-child(4){
+            position: absolute;
+            width: 400px;
+            left: 35%;
+            bottom: 15vh;
+            z-index: 2;
+        }
+
+        section>div:nth-child(4)>img{
+            bottom: 1.6vh;
+            width: 4.5vw;
+            animation: wheel 10s linear infinite;
+            float: left;
+
+        }
+
+        section>div:nth-child(4)>img:nth-child(1){
+            position: absolute;
+            left: 63.2%;
+        }
+
+        section>div:nth-child(4)>img:nth-child(2){
+            position: absolute;
+            left: 8%;
+        }
+
+        @keyframes wheel {
+            100%{
+                transform: rotate(36rad);
+            }
+        }
+
+
+    </style>
+</head>
+<body>
+<section>
+    <div><!--Highway--></div>
+    <div><!--City--></div>
+    <div>
+        <img src="asserts/car.png">
+    </div>
+    <div>
+        <img src="asserts/wheel.png">
+        <img src="asserts/wheel.png">
+    </div>
+</section>
+</body>
+</html>
